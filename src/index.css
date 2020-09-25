@@ -5,9 +5,138 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* overflow: hidden; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.app-navbar ~ .app-header, .app-navbar ~ .app-main-container {
+    margin-left: 0;
+}
+
+.app-header:before, .app-main-container:before {
+  content: "";
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.app-main-container {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  clear: both;
+  float: unset;
+  right: 0;
+  min-height: 100vh;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: whitesmoke;
+}
+
+.app-content {
+  position: relative;
+  display: block;
+  padding: 30px;
+}
+
+.card {
+  border-radius: 0;
+  -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+  box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+  border: none;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  /* min-width: 300px !important;
+  min-height: 100px !important; */
+  max-width: 350px;
+}
+
+.card .card-header {
+  background-color: transparent;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 20px 25px;
+  position: relative;
+}
+
+.card .card-header h5 {
+  margin-bottom: 0;
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+  display: inline-block;
+  margin-right: 10px;
+  line-height: 1.1;
+  position: relative;
+}
+
+.card .card-header h5:after {
+  content: "";
+  background-color: #04a9f5;
+  position: absolute;
+  left: -25px;
+  top: 0;
+  width: 4px;
+  height: 20px;
+}
+
+
+.card .card-block, .card .card-body {
+  padding: 30px 25px;
+}
+
+.Commandes .table tr:first-child td, .User-Lists .table tr:first-child td {
+  border-top: 0;
+}
+
+.Commandes .table td, .User-Lists .table td {
+  vertical-align: middle;
+}
+
+.table td, .table th {
+  border-top: 1px solid #eaeaea;
+  white-space: nowrap;
+  padding: 1.05rem 0.75rem;
+}
+
+.card.Screen-Preview {
+  background-color: rgb(31, 31, 31);
+  width: 350px;
+  height: 87.5px;
+}
+
+.container.Preview-List {
+  padding: 0.5%;
+  height: 100%;
+}
+
+.Preview-OrderNumber {
+  font-size: 22px;
+  height: 100%;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.Preview-Row {
+  height: 25%;
+}
+
+.card-block.Screen-Preview {
+  height: 100%;
+}
+
+.flexValues {
+  width: 100px;
+}
+
+#btn_status_order {
+  width:70px;
+}
+
+#btn_delete_order {
+  width:30px;
 }
